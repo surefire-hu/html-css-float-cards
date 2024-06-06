@@ -3,6 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 body {
     font-family: 'Fredoka',sans-serif;
+}
+main {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+}
+
+.team-section {
+    text-align: center;
+}
+
+.team-section h1 {
+    color: #CB2B61;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    margin-bottom: 40px;
+}
+
+.team-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.team-member {
+    background-color: #0F0E17;
+    color: white;
+    overflow: hidden;
+    float: left;
+    width: calc(33.333% - 20px);
+    margin-right: 25px;
+    margin-bottom: 40px; 
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #888888;
+}
+
+.team-member:nth-child(3n) {
+    margin-right: 0;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+    margin-right: 10px;
+}
+
+.member-info {
+    text-align: left;
+    overflow: hidden;
+}
+
+.member-info h2 {
+    font-size: 1.2em;
+}
+
+.member-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.grey {
+    color: #949093;
+}
+.blue {
+    color: #30C0FB;
 }
